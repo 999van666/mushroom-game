@@ -1,1 +1,119 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>🍄 Грибалка</title><link rel="stylesheet" href="style.css"></head><body><div class="app"><header><div><div class="title">🍄 ГРИБАЛКА</div><div id="hello">Грибник</div></div><div>💰 <b id="coins">500</b></div></header><section class="stats"><div>⭐ <b id="level">1</b></div><div>⚡ <b id="energy">20</b>/<span id="maxEnergy">20</span></div><div>🎒 <b id="weight">0</b>/<span id="capacity">10</span>кг</div></section><main id="screen"></main><nav><button onclick="showForest()">🍄<span>Лес</span></button><button onclick="showInventory()">🎒<span>Корзина</span></button><button onclick="showLocations()">🌲<span>Карта</span></button><button onclick="showShop()">🛒<span>Магазин</span></button><button onclick="showProfile()">👤<span>Профиль</span></button></nav></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,viewport-fit=cover"
+    >
+
+    <title>🍄 Грибалка</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="top-header">
+
+        <div class="player-info">
+
+            <div class="title">
+                🍄 ГРИБАЛКА
+            </div>
+
+            <div id="hello">
+                Грибник
+            </div>
+
+        </div>
+
+        <div class="coins-box">
+            💰
+            <b id="coins">0</b>
+        </div>
+
+    </header>
+
+
+    <section class="stats">
+
+        <div class="stat-item">
+            <span>⭐</span>
+            <b id="level">1</b>
+        </div>
+
+
+        <div class="stat-item energy-stat">
+
+            <div>
+                ⚡
+                <b id="energy">0</b>
+                /
+                <span id="maxEnergy">0</span>
+            </div>
+
+            <small id="energy-timer">
+                Загрузка...
+            </small>
+
+        </div>
+
+
+        <div class="stat-item">
+
+            <span>🎒</span>
+
+            <b id="weight">0</b>
+            /
+            <span id="capacity">0</span> кг
+
+        </div>
+
+    </section>
+
+
+    <main id="screen"></main>
+
+
+    <nav class="bottom-nav">
+
+        <button onclick="showForest()">
+            <span>🍄</span>
+            <small>Лес</small>
+        </button>
+
+        <button onclick="showInventory()">
+            <span>🎒</span>
+            <small>Корзина</small>
+        </button>
+
+        <button onclick="showLocations()">
+            <span>🌲</span>
+            <small>Карта</small>
+        </button>
+
+        <button onclick="showShop()">
+            <span>🛒</span>
+            <small>Магазин</small>
+        </button>
+
+        <button onclick="showProfile()">
+            <span>👤</span>
+            <small>Профиль</small>
+        </button>
+
+    </nav>
+
+</div>
+
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
